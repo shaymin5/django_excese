@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="UTF-8">
+        <title>{{choice.choice_text}}</title>
+    </head>
+    <body>
+        <h1>{{question.question_tex}}最终投票结果</h1>
+        {% for c in choice %}
+            {{c.choice_text}} -- {{c.votes}}票<br>
+        {% endfor %}
+    </body>
+</html>

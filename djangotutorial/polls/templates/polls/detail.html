@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="UTF-8">
+        <title>{{question.question_text}}</title>
+    </head>
+    <body>
+        {{question.question_text}}<br>
+        发布时间: {{question.pub_date|date:"Y-m-d H:i:s"}}<br>
+        <a href="{% url 'polls:results' question.id %}"> 查看投票结果 </a><br>
+    </body>
+</html>
